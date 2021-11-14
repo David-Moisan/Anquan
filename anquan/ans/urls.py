@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import test
+from .views import AnViewSet
 
 urlpatterns = [
-    path('an/', test)
+    path('an/', AnViewSet)
 ]

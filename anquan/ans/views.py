@@ -1,5 +1,16 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render 
+from rest_framework import viewsets
+from .serializers import AnSerializer
+from .models import An
 
-def test(request):
-    return HttpResponse('<h1>Init project</h1>')
+class AnViewSet(viewsets.ModelViewSet):
+    queryset = An.objects.all()
+    serializer_class = AnSerializer
+    #pagination
+    #permissions class
+    
+    #get_queryset avec User
+    
+    #get_serializer_context
+    
+    #perform_create
