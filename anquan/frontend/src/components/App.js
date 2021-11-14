@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import HomeAn from "./AnComponents/HomeAn";
 
 export default class App extends Component{
     constructor(props) {
@@ -8,7 +9,11 @@ export default class App extends Component{
 
 
     render() {
-        return <h1>Test of React code</h1>
+        return (
+            <div>
+                <HomeAn/>
+            </div>
+        )
     }
 }
 
