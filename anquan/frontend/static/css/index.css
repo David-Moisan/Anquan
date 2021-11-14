@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*!COLORS*/
+    --bg: #221a1a;
+    --txt: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+    color: var(--txt);
+}
